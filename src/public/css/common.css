@@ -1,0 +1,107 @@
+.header {
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: block;
+    width: 120px;
+}
+
+.header__search {
+    flex: none;
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header__search input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+
+.header__buttons .btn {
+    margin-left: 10px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form button.btn-text,
+.btn-text {
+    all: unset;                     /* すべてのデフォルトスタイルをリセット */
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;               /* 内側/外側の影をすべて削除 */
+    text-shadow: none;              /* 文字影を消す */
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1;
+    font-family: inherit;
+    vertical-align: middle;
+    outline: none;                  /* フォーカスの青枠なども消す */
+    -webkit-appearance: none;       /* Chrome/Safari */
+    -moz-appearance: none;          /* Firefox */
+    appearance: none;               /* その他ブラウザ */
+}
+
+form button.btn-text:focus,
+form button.btn-text:active,
+.btn-text:focus,
+.btn-text:active {
+    box-shadow: none !important;    /* フォーカス時の影も消す */
+    outline: none !important;       /* フォーカスの枠も消す */
+}
+
+.btn-outlined {
+    color: black;
+    background-color: #fff;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: flex-start;
+    /* 左寄せ */
+    border-bottom: 2px solid #ccc;
+    /* 下線 */
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.sub-nav__item {
+    margin-right: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.sub-nav__item:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+
+

@@ -1,0 +1,83 @@
+/* プロフィール編集全体 */
+.profile-edit-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* タイトル */
+.profile-edit-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* 成功メッセージ */
+.success-message {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* フォームグループ */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* ラベル */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* テキスト入力・ファイル入力 */
+.form-input,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* アイコン画像 */
+.profile-icon {
+    display: block;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* エラーメッセージ */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* 更新ボタン */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #e55b00;
+}

@@ -1,0 +1,168 @@
+/* 親コンテナ */
+.purchase-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+/* 横並び（左右） */
+.purchase-flex {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* 左カラム幅（やや大きめ） */
+.left-column {
+  width: 60%;
+}
+
+/* 右カラム幅 */
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 左上：画像＋商品情報の横並び */
+.left-top {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+/* 小さめの画像 */
+.left-product-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+}
+
+/* 商品名・金額 */
+.left-info .left-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.left-info .left-price {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* 支払方法セレクト */
+.left-select {
+  margin: 12px 0 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+.left-select label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.payment-select {
+  width: 60%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* 配送先ブロック */
+.shipping-block {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.shipping-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.change-address-btn {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* 右側：合計＆支払表示（枠付き） */
+.summary-right {
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6px;
+  border-bottom: 1px dashed #eee;
+  font-size: 16px;
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row .label {
+  color: #666;
+  font-weight: 600;
+}
+
+.summary-row .value {
+  font-weight: 700;
+  color: #222;
+}
+
+/* 購入ボタンブロック */
+.purchase-action {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.buy-button {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  background: #ff6600;
+  color: white;
+  cursor: pointer;
+}
+
+.buy-button:disabled {
+  background: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* レスポンシブ（小さい画面では縦並び） */
+@media (max-width: 820px) {
+  .purchase-flex {
+    flex-direction: column;
+  }
+  .left-column, .right-column {
+    width: 100%;
+  }
+  .payment-select {
+    width: 100%;
+  }
+}

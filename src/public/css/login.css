@@ -1,0 +1,80 @@
+/* 全体の配置 */
+.auth-container {
+    width: 500px;
+    margin: 50px auto; /* 中央寄せ */
+    padding: 20px;
+    text-align: center; /* 中のテキストを中央寄せ */
+}
+
+/* タイトル（ログイン） */
+.auth-title {
+    font-size: 24px;
+    font-weight: bold; /* 太字 */
+    margin-bottom: 20px;
+    text-align: center; /* タイトルは中央寄せ */
+}
+
+/* 各フォームのラベル */
+.form-group label {
+    display: block;
+    font-weight: bold; /* ラベルを太字 */
+    margin-bottom: 8px;
+    text-align: left; /* 入力欄タイトルは左寄せ */
+}
+
+/* 入力欄 */
+.form-group input {
+    width: 100%; /* 横幅を最大に */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* エラーメッセージ */
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* ログインボタン */
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-outlined {
+    background-color: orange;
+    color: white;
+}
+
+.btn-outlined:hover {
+    opacity: 0.9;
+}
+
+/* ログイン後メッセージ */
+.auth-status {
+    color: green;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* 会員登録リンク */
+.auth-links a {
+    display: block;
+    margin-top: 15px;
+    color: blue;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}

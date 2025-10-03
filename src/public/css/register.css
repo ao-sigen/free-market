@@ -1,0 +1,70 @@
+/* 全体の配置 */
+.register-container {
+    width: 500px;
+    margin: 50px auto; /* 中央寄せ */
+    padding: 20px;
+    text-align: center; /* 中のテキストを中央寄せ */
+}
+
+/* タイトル（アカウント作成） */
+.register-title {
+    font-size: 24px;
+    font-weight: bold; /* 太字 */
+    margin-bottom: 20px;
+    text-align: center; /* タイトルは中央寄せ */
+}
+
+/* 各フォームのラベル */
+.form-group label {
+    display: block;
+    font-weight: bold; /* ラベルを太字 */
+    margin-bottom: 8px;
+    text-align: left; /* 入力欄タイトルは左寄せ */
+}
+
+/* 入力欄 */
+.form-group input {
+    width: 100%; /* 横幅を最大に */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* エラーメッセージ */
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* 登録ボタン */
+.btn-register {
+    background-color: orange;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-register:hover {
+    opacity: 0.9;
+}
+
+/* ログインリンク */
+.login-link {
+    display: block;
+    margin-top: 15px;
+    color: blue;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
