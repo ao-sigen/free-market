@@ -57,12 +57,8 @@ php artisan storage:link
 
 
 ## ER図
-
+[!]src/storage/er.png
 
 ## URL
 - 開発環境：http://localhost/
 - phpMyAdmin:：http://localhost:8080/
-
-# auto_mogitate
-
-[def]: er.drawio.png
