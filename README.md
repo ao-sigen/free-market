@@ -57,7 +57,7 @@ php artisan storage:link
 
 
 ## ER図
-[!]src/storage/er.png
+![alt](src/storage/er.png)
 
 ## URL
 - 開発環境：http://localhost/
