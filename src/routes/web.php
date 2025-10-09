@@ -6,6 +6,7 @@ use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MypageController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\Auth\RegisterController;
 
 // 🔹 認証関連
 Route::get('/register', function () {
